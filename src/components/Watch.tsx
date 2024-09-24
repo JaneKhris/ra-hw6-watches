@@ -17,7 +17,6 @@ function Watch({ city, offset, handleClose }: WatchProps) {
   useEffect(() => {
     const id = setInterval(() => {
       setTimeCurrent(dateValue());
-      console.log("+1");
     }, 1000);
 
     return () => clearInterval(id);
